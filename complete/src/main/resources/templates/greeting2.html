@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+
+</head>
+<body>
+
+    <div class="btn-group">
+        <button class="btn">Left</button>
+        <button class="btn">Middle</button>
+        <button class="btn">Right</button>
+    </div>
+
+    <p th:text="'Hello, nochmal ' + ${name} + '!'" />
+    <h1>Spring Boot Web JSP Example</h1>
+    <h2>Spring Boot Web JSP Example</h2>
+    <h3>Welcome to <span th:text="${appname}"></span> Our App</h3>
+    <button type="button" class="btn btn-primary">Primary</button>
+
+
+
+    <script type="text/javascript">
+
+        window.onload = function() {
+            if (window.jQuery) {
+                // jQuery is loaded
+                alert("Yeah!");
+            } else {
+                // jQuery is not loaded
+                alert("Doesn't Work");
+            }
+        }
+
+    </script>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+
+</body>
+</html>
